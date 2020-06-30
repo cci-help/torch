@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 <!--
 	Inspired by: Miniport by HTML5 UP
-    Why reinvent the wheel?
+	Why reinvent the wheel?
+	
+	More inspo:
+	https://education.fsu.edu/
 -->
 <html>
 	<head>
@@ -45,33 +48,45 @@
 			<article id="info" class="wrapper style2">
 				<div class="container">
 					<header>
-						<h2>Here's what you can do:</h2>
+						<h2 id="redheader">Here's what you can do:</h2>
 					</header>
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon solid featured fa-check"></span>
 								<h3>Host your class or personal websites</h3>
-								<p>Your site will be hosted by CCI for XX years. Continue to develop your site after your class is over.</p>
+								<p>Your site can be used for classwork, and after your class is over, continue to develop after your class is over.</p>
+								<h3>Quick start</h3>
+								<h4>SSH</h4>
+								<p>ssh FSUID@torch.cci.fsu.edu</p>
+								<h4>SFTP</h4>
+								
+									<p><strong>Host:</strong> sftp://torch.cci.fsu.edu
+										<br>
+										<strong>Username:</strong> Your FSUID
+									<br>
+									<strong>Password:</strong> Your FSU password
+									<br>
+									<strong>Port:</strong> 22</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon solid featured fa-star"></span>
 								<h3>Expand your class project into a portfolio project</h3>
-								<p>Harness the power of built-in git, MySQL, PHP, Python3, NPM, etc. to impress employers.</p>
+								<p>Harness the power of built-in git, MySQL, PHP, Python3, NPM, etc. to impress employers. HTTPS makes your project look official.</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon solid featured fa-search"></span>
 								<h3>Anything else you can think of</h3>
-								<p>Think we're missing that latest Javascript framework? Need some obscure PHP module? Contact us, and we can get it installed.</p>
+								<p>Think we're missing that latest Javascript framework? Need some obscure PHP module? Contact us, and we'll work something out.</p>
 							</section>
 						</div>
 					</div>
 					<footer>
-						<h3>Looking for inspiration?</h3>
+						<h3 id="redheader">Looking for inspiration?</h3>
 						<a href="#portfolio" class="button large scrolly">See some top student portfoilios</a>
 					</footer>
 				</div>
@@ -87,9 +102,9 @@
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/max_web.png" alt="" /></a>
 								<h3><a href="https://torch.cci.fsu.edu/~mhp19b/">Max Poorman</a></h3>
-								<p>Max's avante-garde website radically changed the Internet.</p>
+								<p>Max's avante-garde website is a sight to behold.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -101,9 +116,9 @@
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Lorem ipsum</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<a href="https://torch.cci.fsu.edu/~jgm16j/" class="image featured"><img src="images/julia_web.png" alt="" /></a>
+								<h3><a href="#">Julia McLane</a></h3>
+								<p>Julia's beautiful site changed the Internet forever.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -128,10 +143,6 @@
 							</article>
 						</div>
 					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
 				</div>
 			</article>
 
@@ -139,12 +150,16 @@
 			<article id="contact" class="wrapper style4">
 				<div class="container medium">
 					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-					</header>
+						<h2>Contact the CCI HelpDesk for technical support. For assignment-related questions, <em>please</em> reach to your instructor first.</h2>
+				</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<ul>
+								<h3>CCI HelpDesk:</h3>
+								<h3>support.cci.fsu.edu</h3>
+								<h3>850-644-8108</h3>
+							</ul>
+							<!-- <form method="post" action="#">
 								<div class="row">
 									<div class="col-6 col-12-small">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -165,11 +180,11 @@
 										</ul>
 									</div>
 								</div>
-							</form>
+							</form> -->
 						</div>
 						<div class="col-12">
 							<hr />
-							<h3>Find me on ...</h3>
+							<!-- <h3>Find me on ...</h3>
 							<ul class="social">
 								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -177,7 +192,7 @@
 								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
 								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
 								<!--
 								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
 								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
@@ -195,7 +210,7 @@
 					</div>
 					<footer>
 						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; CCI HelpDesk. All rights reserved.</li><li>Design: Will Bollock, with HTML5UP</li>
 						</ul>
 					</footer>
 				</div>
