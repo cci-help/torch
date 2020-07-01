@@ -8,7 +8,12 @@
 */
 
 #redheader { /* used for headers in the first red div */
-	color: #fff !important;
+	color: #fff;
+	text-shadow: none;
+}
+
+#footerblack { /* used for footers on white background */
+	color: #000;
 	text-shadow: none;
 }
 
