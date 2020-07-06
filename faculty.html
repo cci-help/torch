@@ -43,13 +43,13 @@
       <article id="access" class="wrapper style2">
          <div class="container">
             <header>
-               <h2 id="redheader">Here's how it works:</h2>
+               <h2 class="redheader">Here's how it works:</h2>
             </header>
             <div class="row aln-center">
                <div class="col-4 col-6-medium col-12-small">
                   <section class="box style1">
-                     <span class="icon solid featured fa-check"></span>
-                     <h3>Automatic Enrollment</h3>
+                    <!-- <span class="icon solid featured fa-check"></span>-->
+                     <h2>Automatic Enrollment</h2>
                      <p>Contact the CCI HelpDesk with a list of your students, and access will be granted quickly.</p>
                      <p>Students will be able to SSH or SFTP with their FSU credentials, and MySQL information will be emailed to them automatically.</p>
                      <p><strong>Please note:</strong> your MySQL information will <strong>not</strong> be emailed to you, if you only have an @fsu.edu address.</p>
@@ -58,23 +58,22 @@
                </div>
                <div class="col-4 col-6-medium col-12-small">
                   <section class="box style1">
-                  <span class="icon solid featured fa-camera-retro"></span>
-                  <h3>Security</h3>
+                  <!--<span class="icon solid featured fa-lock"></span>-->
+                  <h2>Security</h2>
                   <p>No longer will students share account information. Each student has unique SSH/SFTP and MySQL information.</p>
                   <p>Torch also provides SSL to all student websites - you can now create actual login pages that are secured against MITM attacks.</p>
                   <p>Easily view your student's websites at https://torch.cci.fsu.edu/~FSUID, and browse their files in /web/FSUID.</p>
                </div>
                <div class="col-4 col-6-medium col-12-small">
                   <section class="box style1">
-                  <span class="icon solid featured fa-camera-retro"></span>
-                  <h3>Technical Information</h3>
+                  <!--<span class="icon solid featured fa-unlock"></span>-->
+                  <h2>Technical Information</h2>
                   <p>Student logins are through AD, with user being their FSUID, and group 'domain users'.</p>
                   <p>A script runs in a systemd service, using inotify (infinite loop) to detect new folders in /home/. A MySQL account is created, with permissions on a database
                      titled "FSUID" and <strong>any other database starting with FSUID_</strong> 
                   </p>
                   <p>mysql> show grants;</p>
-                  <p></p>
-                  GRANT USAGE ON *.* TO `web15c`@`localhost`</p>
+                  <p>GRANT USAGE ON *.* TO `web15c`@`localhost`</p>
                   <p>GRANT ALL PRIVILEGES ON `web15c`.* TO `web15c`@`localhost`</p>
                   <p>GRANT ALL PRIVILEGES ON `web15c_%`.* TO `web15c`@`localhost`</p>
                </div>
@@ -110,9 +109,9 @@
 		   </div>
 		   <footer>
 			  <ul id="copyright">
-			   <img style="max-width:10%" src="images/fsu-seal-full-color.png">
-				 <li id="footerblack">&copy; CCI HelpDesk. All rights reserved.</li>
-				 <li id="footerblack">Design: Will Bollock, with HTML5UP</li>
+			   <img style="width:5%" src="images/fsu-seal-full-color.png">
+				 <li class="footerblack">&copy; CCI HelpDesk. All rights reserved.</li>
+				 <li class="footerblack">Design: Will Bollock, with HTML5UP</li>
 			  </ul>
 		   </footer>
 		</div>
